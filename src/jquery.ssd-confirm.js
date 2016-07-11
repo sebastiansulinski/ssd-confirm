@@ -41,7 +41,11 @@
                 classHide: 'hide',
 
                 extendBlocks: {},
-                extendBehaviours: {}
+                extendBehaviours: {},
+
+                actionProperties: function(trigger, properties) {
+                    return properties;
+                }
 
             }, options);
 
@@ -155,6 +159,8 @@
                                         wrapper.find('[' + Confirm.dataAttr(settings.dataButtonProcessing) + ']') :
                                         null
                             };
+
+                        properties = settings.actionProperties(trigger, properties);
 
                         Action.showProcessing(trigger, properties.processing);
 
