@@ -1,6 +1,6 @@
 {
   "name": "ssd-confirm",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "jQuery plugin to handle confirmations",
   "main": "index.js",
   "scripts": {
