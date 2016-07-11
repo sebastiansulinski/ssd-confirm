@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SSD Confirm</title>
+    <link href="./assets/css/foundation.min.css" rel="stylesheet">
+    <link href="./assets/css/ssd-confirm.css" rel="stylesheet">
+    <link href="./assets/css/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="row">
+
+    <div class="large-6 medium-8 columns large-offset-3 medium-offset-2">
+
+        <table class="table-list">
+
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th class="col-1">
+                        <span
+                            class="small secondary disabled button"
+                        >
+                            <i class="fa fa-trash fa-fw"></i>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr data-row>
+                    <td>
+                        Remove row after confirming
+                    </td>
+                    <td>
+                        <span
+                            class="small button"
+                            data-ssd-confirm-trigger="remove"
+                            data-ssd-confirm-message="Are you sure you wish to remove this record?<br />There is no undo!"
+                            data-ssd-confirm-url="/remove.json"
+                            data-ssd-confirm-behaviour="removeRow"
+                        >
+                            <i class="fa fa-trash fa-fw"></i>
+                        </span>
+                    </td>
+                </tr>
+                <tr data-row>
+                    <td>
+                        Reload after confirming
+                    </td>
+                    <td>
+                        <span
+                            class="small button"
+                            data-ssd-confirm-trigger="remove"
+                            data-ssd-confirm-message="Are you sure you wish to remove this record?<br />There is no undo!"
+                            data-ssd-confirm-url="/remove.json"
+                            data-ssd-confirm-behaviour="reload"
+                        >
+                            <i class="fa fa-trash fa-fw"></i>
+                        </span>
+                    </td>
+                </tr>
+                <tr data-row>
+                    <td>
+                        Reload after confirming
+                    </td>
+                    <td>
+                        <span
+                            class="small button"
+                            data-ssd-confirm-trigger="remove"
+                            data-ssd-confirm-message="Are you sure you wish to remove this record?<br />There is no undo!"
+                            data-ssd-confirm-url="/remove.json"
+                            data-ssd-confirm-behaviour="reload"
+                        >
+                            <i class="fa fa-trash fa-fw"></i>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+<div data-ssd-confirm>
+
+    <div data-ssd-confirm-block="remove">
+
+        <p data-ssd-confirm-content></p>
+
+        <nav>
+
+            <span data-button-wrapper>
+
+                <span
+                    class="small alert button"
+                    data-ssd-confirm-yes
+                    data-trigger
+                >YES</span>
+
+                <span
+                    class="small alert disabled button hide"
+                    data-processing
+                ><i class="fa fa-spinner fa-spin fa-fw"></i></span>
+
+            </span>
+
+            <span class="small button" data-ssd-confirm-no>NO</span>
+
+        </nav>
+
+    </div>
+
+</div>
+
+<div data-ssd-confirm-overlay></div>
+
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./src/jquery.ssd-confirm.js"></script>
+<script>
+    $(function() {
+        $('[data-ssd-confirm-trigger]').ssdConfirm();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "ssd-confirm",
+  "version": "0.0.1",
+  "description": "jQuery plugin to handle confirmations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastiansulinski/ssd-confirm.git"
+  },
+  "keywords": [
+    "jquery",
+    "confirmation"
+  ],
+  "author": "Sebastian Sulinski <info@ssdtutorials.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebastiansulinski/ssd-confirm/issues"
+  },
+  "homepage": "https://github.com/sebastiansulinski/ssd-confirm#readme",
+  "dependencies": {
+    "jquery": ">= 1.9"
+  }
+}

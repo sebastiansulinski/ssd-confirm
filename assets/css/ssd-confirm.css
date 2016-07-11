@@ -1,0 +1,76 @@
+[data-ssd-confirm],
+[data-ssd-confirm-overlay] {
+
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+
+}
+
+[data-ssd-confirm] {
+
+    z-index: 999999;
+    top: -10rem;
+    background-color: #222;
+    padding: 1.8rem;
+    text-align: center;
+
+}
+
+[data-ssd-confirm].active {
+
+    top: 0;
+
+}
+
+[data-ssd-confirm] nav,
+[data-ssd-confirm] nav a,
+[data-ssd-confirm] nav span {
+
+    margin-bottom: 0;
+
+}
+
+[data-ssd-confirm],
+[data-ssd-confirm] nav,
+[data-ssd-confirm] nav a:not(.button) {
+
+    color: #fff;
+
+}
+
+[data-ssd-confirm] [data-ssd-confirm-block],
+.hide {
+
+    display: none;
+
+}
+
+[data-ssd-confirm] [data-ssd-confirm-block].show {
+
+    display: block;
+
+}
+
+[data-ssd-confirm-overlay] {
+
+    height: 100%;
+    z-index: 9999;
+    top: 100%;
+    background-color: rgba(221, 221, 221, 0.8);
+
+}
+
+[data-ssd-confirm-overlay].show {
+
+    top: 0;
+
+}

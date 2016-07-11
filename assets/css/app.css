@@ -1,0 +1,24 @@
+body {
+
+    padding: 2rem 0;
+    background-color: #eee;
+
+}
+
+.table-list {
+
+    width: 100%;
+
+}
+
+.table-list .button {
+
+    margin-bottom: 0;
+
+}
+
+.col-1 {
+
+    width: 1%;
+
+}
