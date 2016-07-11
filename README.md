@@ -174,6 +174,9 @@ classHide: 'hide',                          // dialog css class to hide 'yes' / 
 
 extendBlocks: {},                           // object that can extend blocks (currently only 'remove').
 extendBehaviours: {}                        // object that can extend behaviours (currently only 'reload' and 'removeRow').
+
+actionProperties: function(trigger, properties) { return properties; }
+// allows you to modify properties before the call is made.
 ```
 
 ## Behaviours
