@@ -2,7 +2,7 @@
  * ssdConfirm jQuery plugin
  * Examples and documentation at: https://github.com/sebastiansulinski/ssd-confirm
  * Copyright (c) 2017 Sebastian Sulinski
- * Version: 1.0.2 (29-JAN-2017)
+ * Version: 1.0.3 (29-JAN-2017)
  * Licensed under the MIT.
  * Requires: jQuery v1.9 or later
  */
