@@ -8,7 +8,7 @@ Simple confirmation plugin for jQuery.
 
 To make the plugin work you need to include jQuery and styles from within `ssd-confirm.css` file as well as either minified or src version of the plugin.
 
-```
+```html
 <link href="./assets/css/ssd-confirm.css" rel="stylesheet">
 
 <script src="./node_modules/jquery/dist/jquery.js"></script>
@@ -19,7 +19,7 @@ You also need to add the following html towards the bottom of your page structur
 
 ### Confirmation dialog
 
-```
+```html
 <div data-ssd-confirm>
 
     <div data-ssd-confirm-block="remove">
@@ -56,7 +56,7 @@ You also need to add the following html towards the bottom of your page structur
 
 ### Example list of records
 
-```
+```html
 <table class="table-list">
 
     <thead>
@@ -141,7 +141,7 @@ Considering the above, here's how the data attributes from the two code blocks a
 
 Call plugin on the instance of the trigger you wish to apply it to.
 
-```
+```html
 $('[data-ssd-confirm-trigger]').ssdConfirm();
 ```
 
@@ -185,9 +185,12 @@ Currently there are only 2 behaviours, but you can add more by adding them to th
 
 ```
 reload: Reloads page.
-removeRow: Removes the container of the record. This option requires `dataRecordWrapper` to be applied to the container of your record (default `data-row`), which should contain the trigger button. Example
+removeRow: Removes the container of the record. This option requires `dataRecordWrapper` to be applied to the container of your record (default `data-row`), which should contain the trigger button.
+```
 
+Example of `removeRow`:
 
+```html
 <tr data-row>
     <td>
         Record name
@@ -209,12 +212,12 @@ removeRow: Removes the container of the record. This option requires `dataRecord
 Behaviour methods take 3 arguments:
 
 ```
-data:               // data returned from ajax call
-trigger:            // instance of the 'yes' button
-properties:         // object containing:
+* data:               // data returned from ajax call
+* trigger:            // instance of the 'yes' button
+* properties:         // object containing:
 
-    url:            // url / uri to be called
-    behaviour:      // behaviour name
-    originator:     // instance of the button that triggered the dialog
-    processing:     // instance of the 'processing' button if exists - otherwise 'null'
+    * url:            // url / uri to be called
+    * behaviour:      // behaviour name
+    * originator:     // instance of the button that triggered the dialog
+    * processing:     // instance of the 'processing' button if exists - otherwise 'null'
 ```
