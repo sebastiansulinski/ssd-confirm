@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/sebastiansulinski/ssd-confirm#readme",
   "dependencies": {
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.0"
   }
 }
