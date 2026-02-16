@@ -1,5 +1,8 @@
 # jQuery confirmation plugin
 
+> **Warning**
+> This package is deprecated and no longer maintained.
+
 Simple confirmation plugin for jQuery.
 
 [Demo is available here](http://ssd-confirm.ssdtutorials.com/)
